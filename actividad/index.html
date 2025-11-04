@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App "Legacy" (Auditoría)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="module-container" id="calculator-module">
+      <h2>Módulo de Calculadora Legacy</h2>
+      <div class="calculator" role="application" aria-label="Calculadora">
+        <div id="display" aria-live="polite">0</div>
+        <div class="buttons" role="group" aria-label="Botones calculadora">
+          <button type="button">sin</button>
+          <button type="button">cos</button>
+          <button type="button">tan</button>
+          <button type="button" class="operator">C</button>
+
+          <button type="button">7</button>
+          <button type="button">8</button>
+          <button type="button">9</button>
+          <button type="button" class="operator">/</button>
+
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button">6</button>
+          <button type="button" class="operator">*</button>
+
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button" class="operator">-</button>
+
+          <button type="button" class="zero">0</button>
+          <button type="button">.</button>
+          <button type="button" class="operator">=</button>
+          <button type="button" class="operator">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-container" id="todo-module">
+      <h2>Módulo de To-Do List Legacy</h2>
+      <div class="todo-app" role="region" aria-label="Lista de tareas">
+        <div class="input-container">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Añadir nueva tarea..."
+            aria-label="Nueva tarea"
+          />
+          <button id="add-task-btn" type="button">Agregar</button>
+        </div>
+        <ul id="todo-list" aria-live="polite"></ul>
+      </div>
+    </div>
+
+    <!-- Script corregido: coincide con el nombre del archivo subido -->
+    <script src="app-legacy.js"></script>
+  </body>
+</html>
